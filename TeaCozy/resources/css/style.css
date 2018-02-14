@@ -1,0 +1,147 @@
+
+body {
+  margin: 0;
+  font-family: "Helvetica", sans-serif;
+  font-size: 19px;  /* reduced font size since something seemed off with the font sizes on my display */
+  color: seashell;   /* color is not sticking either hmmm  */
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+a {
+  color: seashell;  /* this seem to work to get the color to stick here but not elsewhere */
+  text-decoration: underline;
+ }
+
+/* not the most graceful way to do this perhaps (a back fix) */
+h2, h4 {
+  margin: 0;
+  padding: 10px;
+}
+ h3 {
+  margin: 20px 0px 0px 0px;
+  padding: 10px;
+}
+p {
+  margin: 20px;
+  padding: 10px;
+}
+/* Header */
+nav span {
+  display: inline-block;
+  padding: 10px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 69px;
+  background-color: black;
+    border-bottom: 1px solid seashell;
+}
+
+.logo {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.logo img {
+  height: 50px;
+  margin-left: 10px;
+}
+
+header nav {
+  align-items: flex-end;
+}
+
+/*  Mission */
+.mission{
+  display: flex;
+  justify-content: center;
+  align-items: center:
+  color: seashell;
+  text-align: center;
+}
+.mission-image {
+  height: 700px;
+  width: 1200px;
+  background-image: url("../images/img-mission-background.jpg");
+}
+
+.block.mission-image {
+  display: flex;
+  background-color: black;
+  align-items: center;
+}
+
+.mission .content {
+  background-color: black;
+  width: 100%
+}
+
+/* tea images */
+.tea-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tea-container img {
+  display: block;
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+  f
+}
+.tea-block {
+  padding: 5px;
+}
+.tea-block span {
+  padding: 10px;
+}
+
+/* Locations */
+
+.location {
+  height: 500px;
+  padding-top: 70px;
+  align: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../images/img-locations-background.jpg");
+}
+
+.location-box {
+  justify-content: center;
+  display: inline-block;
+  background-color: black;
+  width: 300px;
+  margin: 5px 20px;
+  opacity: 1;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  margin: auto;
+}
+
+footer .block {
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  height: 200px;
+}
+.copyright {
+  text-align: left;
+  padding-left: 20px;
+}
